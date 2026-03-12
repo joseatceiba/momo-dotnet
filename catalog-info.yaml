@@ -8,5 +8,6 @@ metadata:
     github.com/project-slug: ${{ values.repoOwner }}/${{ values.repoName }}
 spec:
   type: service
+   system: ${{ values.system }}
   owner: user:guest
   lifecycle: experimental

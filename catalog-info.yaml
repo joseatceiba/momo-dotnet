@@ -1,13 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{ values.name }}
+  name: "${{ values.name }}"
   description: "A new service"
   annotations:  
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: ${{ values.repoOwner }}/${{ values.repoName }}
+    github.com/project-slug: "${{ values.repoOwner }}/${{ values.repoName }}"
 spec:
   type: service
-  system: ${{ values.system }}
+  system: "${{ values.system }}"
   owner: user:guest
   lifecycle: experimental
